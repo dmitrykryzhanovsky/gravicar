@@ -6,4 +6,3 @@ D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.AssemblyInfo
 D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.AssemblyInfo.cs
 D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.dll
 D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.pdb
-D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.csprojAssemblyReference.cache
