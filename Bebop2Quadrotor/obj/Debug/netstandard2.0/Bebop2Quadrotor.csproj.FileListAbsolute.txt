@@ -6,3 +6,4 @@ D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadroto
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.AssemblyInfo.cs
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.dll
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.pdb
+D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.csprojAssemblyReference.cache
