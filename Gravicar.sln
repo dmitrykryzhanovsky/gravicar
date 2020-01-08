@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bebop2Quadrotor", "Bebop2Quadrotor\Bebop2Quadrotor.csproj", "{22A9F568-2C14-4A04-92E3-21A413D40FD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "runtime tests", "runtime tests", "{7D3C547A-B7D5-44C1-9CC5-E44AF4201DC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "runtimeTests.Bebop2Quadrotor.ConsoleApplication", "runtimeTests.Bebop2Quadrotor.ConsoleApplication\runtimeTests.Bebop2Quadrotor.ConsoleApplication.csproj", "{D8B6D74E-4AD2-4E49-A936-1A12F9724E55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parrot ARDrone3", "Parrot ARDrone3", "{2F0725FF-EC63-48AA-A978-D35CACCD4E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARDrone3", "ARDrone3\ARDrone3.csproj", "{C2F9A93B-347F-4C93-97F4-1A7BA932235A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A9F568-2C14-4A04-92E3-21A413D40FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A9F568-2C14-4A04-92E3-21A413D40FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A9F568-2C14-4A04-92E3-21A413D40FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A9F568-2C14-4A04-92E3-21A413D40FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B6D74E-4AD2-4E49-A936-1A12F9724E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B6D74E-4AD2-4E49-A936-1A12F9724E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B6D74E-4AD2-4E49-A936-1A12F9724E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B6D74E-4AD2-4E49-A936-1A12F9724E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F9A93B-347F-4C93-97F4-1A7BA932235A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F9A93B-347F-4C93-97F4-1A7BA932235A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F9A93B-347F-4C93-97F4-1A7BA932235A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F9A93B-347F-4C93-97F4-1A7BA932235A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22A9F568-2C14-4A04-92E3-21A413D40FD0} = {2F0725FF-EC63-48AA-A978-D35CACCD4E11}
+		{D8B6D74E-4AD2-4E49-A936-1A12F9724E55} = {7D3C547A-B7D5-44C1-9CC5-E44AF4201DC8}
+		{C2F9A93B-347F-4C93-97F4-1A7BA932235A} = {2F0725FF-EC63-48AA-A978-D35CACCD4E11}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B66E0E3-CB31-46FF-812B-3AFF523449F7}
+	EndGlobalSection
+EndGlobal
