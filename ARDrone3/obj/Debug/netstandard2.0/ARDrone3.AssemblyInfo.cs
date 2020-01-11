@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ARDrone3")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Gravicar.ARDrone3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ARDrone3")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ARDrone3")]
+[assembly: System.Reflection.AssemblyProductAttribute("Gravicar.ARDrone3")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Gravicar.ARDrone3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

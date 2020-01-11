@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Bebop2Quadrotor")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Gravicar.Bebop2Quadrotor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Bebop2Quadrotor")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Bebop2Quadrotor")]
+[assembly: System.Reflection.AssemblyProductAttribute("Gravicar.Bebop2Quadrotor")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Gravicar.Bebop2Quadrotor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

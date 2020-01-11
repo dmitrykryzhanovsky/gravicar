@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\New Horizons\\Gravicar\\Bebop2Quadrotor\\Bebop2Quadrotor.csproj",
-        "projectName": "Bebop2Quadrotor",
+        "projectName": "Gravicar.Bebop2Quadrotor",
         "projectPath": "D:\\New Horizons\\Gravicar\\Bebop2Quadrotor\\Bebop2Quadrotor.csproj",
         "packagesPath": "C:\\Users\\dmitry\\.nuget\\packages\\",
         "outputPath": "D:\\New Horizons\\Gravicar\\Bebop2Quadrotor\\obj\\",

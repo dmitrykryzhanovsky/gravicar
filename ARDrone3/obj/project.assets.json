@@ -186,7 +186,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "D:\\New Horizons\\Gravicar\\ARDrone3\\ARDrone3.csproj",
-      "projectName": "ARDrone3",
+      "projectName": "Gravicar.ARDrone3",
       "projectPath": "D:\\New Horizons\\Gravicar\\ARDrone3\\ARDrone3.csproj",
       "packagesPath": "C:\\Users\\dmitry\\.nuget\\packages\\",
       "outputPath": "D:\\New Horizons\\Gravicar\\ARDrone3\\obj\\",

@@ -1,21 +1,20 @@
 ﻿using System;
 
-namespace ARDrone3.Communication
+namespace Gravicar.ARDrone3.Communication
 {
     internal static class FrameRoutines
     {
-        internal static int EncodeFrameHeaderTo (out byte [] array, EFrameDataType dataType, EFrameTargetBufferId targetBufferId, byte sequenceNumber, 
-            int frameTotalSize)
+        internal static int EncodeFrameHeaderTo (INetworkFrame frameToEncode, byte [] array, byte sequenceNumber)
         {
-            array = new byte [frameTotalSize];
+            frameToEncode.SequenceNumber = sequenceNumber;
 
-            array [0] = (byte)dataType;
-            array [1] = (byte)targetBufferId;
+            array [0] = (byte)frameToEncode.DataType;
+            array [1] = (byte)frameToEncode.TargetBufferId;
             array [2] = sequenceNumber;
 
-            BitConverter.GetBytes (frameTotalSize).CopyTo (array, Const.IndexToEncodeFrameTotalSize);
+            BitConverter.GetBytes (frameToEncode.TotalSize).CopyTo (array, Const.Communication.IndexToEncodeFrameTotalSize);
 
-            return Const.IndexAfterEncodingFrameHeader;
+            return Const.Communication.FrameHeaderSize;
         }
     }
 }

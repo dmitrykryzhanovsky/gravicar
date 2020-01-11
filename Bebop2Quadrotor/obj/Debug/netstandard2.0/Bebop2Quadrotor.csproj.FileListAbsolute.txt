@@ -1,9 +1,8 @@
-D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Bebop2Quadrotor.deps.json
-D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Bebop2Quadrotor.dll
-D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Bebop2Quadrotor.pdb
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.csproj.CoreCompileInputs.cache
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.AssemblyInfoInputs.cache
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.AssemblyInfo.cs
-D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.dll
-D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.pdb
-D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.csprojAssemblyReference.cache
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.deps.json
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.dll
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.pdb
+D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.dll
+D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.pdb

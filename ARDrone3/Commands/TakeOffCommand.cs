@@ -1,6 +1,6 @@
-﻿using ARDrone3.Communication;
+﻿using Gravicar.ARDrone3.Communication;
 
-namespace ARDrone3.Commands
+namespace Gravicar.ARDrone3.Commands
 {
     public class TakeOffCommand : Command
     {
@@ -8,7 +8,7 @@ namespace ARDrone3.Commands
         {
             get
             {
-                return EFrameDataType.CommonData;
+                return EFrameDataType.Common;
             }
         }
 
@@ -16,7 +16,7 @@ namespace ARDrone3.Commands
         {
             get
             {
-                return EFrameTargetBufferId.CToD_CommonData;
+                return EFrameTargetBufferId.CToV_Common;
             }
         }
 
@@ -44,7 +44,7 @@ namespace ARDrone3.Commands
             }
         }
 
-        public TakeOffCommand () : base ()
+        public TakeOffCommand ()
         {
         }
     }

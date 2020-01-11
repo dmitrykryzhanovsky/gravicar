@@ -1,20 +1,30 @@
 ﻿using System;
 
-using ARDrone3.Communication;
+using Gravicar.ARDrone3.Communication;
 
-namespace ARDrone3.Commands
+namespace Gravicar.ARDrone3.Commands
 {
-    public abstract class Command : INetworkData
+    public abstract class Command : INetworkFrame
     {
         public abstract EFrameDataType DataType { get; }
 
         public abstract EFrameTargetBufferId TargetBufferId { get; }
 
-        public virtual int FrameTotalSize
+        public byte SequenceNumber { get; set; }
+
+        public int TotalSize
         {
             get
             {
-                return Communication.Const.IndexAfterEncodingFrameHeader + Commands.Const.IndexAfterEncodingCommandHeader;
+                return Const.Commands.CommandNoParametersSize + CommandParametersSize;
+            }
+        }
+
+        protected virtual int CommandParametersSize
+        {
+            get
+            {
+                return 0;
             }
         }
 
@@ -24,25 +34,20 @@ namespace ARDrone3.Commands
 
         public abstract ECommandId CommandId { get; }
 
-        protected Command ()
+        public void EncodeTo (byte [] array, byte sequenceNumber)
         {
-        }
-
-        public virtual void EncodeTo (out byte [] array, byte sequenceNumber)
-        {
-            EncodeFrameAndCommandHeaderTo (out array, sequenceNumber);
-        }
-
-        private int EncodeFrameAndCommandHeaderTo (out byte [] array, byte sequenceNumber)
-        {
-            int index = FrameRoutines.EncodeFrameHeaderTo (out array, DataType, TargetBufferId, sequenceNumber, FrameTotalSize);
+            int index = FrameRoutines.EncodeFrameHeaderTo (this, array, sequenceNumber);
 
             array [index]     = (byte)ProjectId;
             array [index + 1] = (byte)ClassId;
 
-            BitConverter.GetBytes ((ushort)CommandId).CopyTo (array, Const.IndexToEncodeCommandId);
+            BitConverter.GetBytes ((ushort)CommandId).CopyTo (array, Const.Commands.IndexToEncodeCommandId);
 
-            return index + Const.IndexAfterEncodingCommandHeader;
+            EncodeCommandParametersTo (array, Const.Commands.CommandNoParametersSize);
+        }
+
+        protected virtual void EncodeCommandParametersTo (byte [] array, int index)
+        {
         }
     }
 }

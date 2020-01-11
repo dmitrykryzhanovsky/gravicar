@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Gravicar.ARDrone3</AssemblyName>
+    <RootNamespace>Gravicar.ARDrone3</RootNamespace>
   </PropertyGroup>
 
 </Project>
