@@ -2,6 +2,9 @@
 
 namespace Gravicar.ARDrone3.Commands
 {
+    /// <summary>
+    /// Команда TakeOff (взлёт).
+    /// </summary>
     public class TakeOffCommand : Command
     {
         public override EFrameDataType DataType

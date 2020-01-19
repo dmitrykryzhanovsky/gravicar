@@ -2,6 +2,9 @@
 
 namespace Gravicar.ARDrone3.Commands
 {
+    /// <summary>
+    /// Команда Land (посадка).
+    /// </summary>
     public class LandCommand : Command
     {
         public override EFrameDataType DataType

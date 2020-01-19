@@ -1,7 +1,7 @@
 ﻿namespace Gravicar.ARDrone3.Communication
 {
     /// <summary>
-    /// Виды данных, содержащихся в фрейме, пересылаемом по сети.
+    /// Типы данных, содержащихся в фрейме, пересылаемом по сети.
     /// </summary>
     public enum EFrameDataType : byte
     {
