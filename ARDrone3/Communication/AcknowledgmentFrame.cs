@@ -39,11 +39,13 @@
             FrameToConfirmSequenceNumber = frameToConfirm.SequenceNumber;
         }
 
-        public void EncodeTo (byte [] array, byte sequenceNumber)
+        public byte [] Encode (byte sequenceNumber)
         {
-            int index = FrameRoutines.EncodeFrameHeaderTo (this, array, sequenceNumber);
+            byte [] encodedByteArray = FrameRoutines.EncodeFrameHeader (this, sequenceNumber, out int index);
 
-            array [index] = FrameToConfirmSequenceNumber;
+            encodedByteArray [index] = FrameToConfirmSequenceNumber;
+
+            return encodedByteArray;
         }
     }
 }

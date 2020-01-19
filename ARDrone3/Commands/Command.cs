@@ -49,16 +49,18 @@ namespace Gravicar.ARDrone3.Commands
         /// </summary>
         public abstract ECommandId CommandId { get; }
 
-        public void EncodeTo (byte [] array, byte sequenceNumber)
+        public byte [] Encode (byte sequenceNumber)
         {
-            int index = FrameRoutines.EncodeFrameHeaderTo (this, array, sequenceNumber);
+            byte [] encodedByteArray = FrameRoutines.EncodeFrameHeader (this, sequenceNumber, out int index);
 
-            array [index]     = (byte)ProjectId;
-            array [index + 1] = (byte)ClassId;
+            encodedByteArray [index]     = (byte)ProjectId;
+            encodedByteArray [index + 1] = (byte)ClassId;
 
-            BitConverter.GetBytes ((ushort)CommandId).CopyTo (array, Const.Commands.IndexToEncodeCommandId);
+            BitConverter.GetBytes ((ushort)CommandId).CopyTo (encodedByteArray, Const.Commands.IndexToEncodeCommandId);
 
-            EncodeCommandParametersTo (array, Const.Commands.CommandNoParametersSize);
+            EncodeCommandParametersTo (encodedByteArray, Const.Commands.CommandNoParametersSize);
+
+            return encodedByteArray;
         }
 
         /// <summary>

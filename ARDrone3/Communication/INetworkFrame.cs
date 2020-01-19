@@ -29,8 +29,7 @@
         /// <summary>
         /// Кодирует фрейм (и заголовок, и данные) в виде массива байтов.
         /// </summary>
-        /// <param name="array">Массив, в который записывается байтовое представление фрейма.</param>
         /// <param name="sequenceNumber"><see cref="SequenceNumber"/>, который будет присвоен фрейму.</param>
-        void EncodeTo (byte [] array, byte sequenceNumber);
+        byte [] Encode (byte sequenceNumber);
     }
 }

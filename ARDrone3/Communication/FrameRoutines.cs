@@ -11,20 +11,23 @@ namespace Gravicar.ARDrone3.Communication
         /// Кодирует заголовок фрейма в виде массива байтов.
         /// </summary>
         /// <param name="frameToEncode">Фрейм, который нужно закодировать.</param>
-        /// <param name="array">Массив, в который записывается байтовое представление фрейма.</param>
         /// <param name="sequenceNumber"><see cref="SequenceNumber"/>, который будет присвоен фрейму.</param>
-        /// <returns>Возвращает смещение в массиве <paramref name="array"/> после завершения работы методы (кодирования заголовка фрейма).</returns>
-        internal static int EncodeFrameHeaderTo (INetworkFrame frameToEncode, byte [] array, byte sequenceNumber)
+        /// <param name="index">Смещение в возвращаемом массиве после завершения работы метода (кодирования заголовка фрейма)</param>
+        internal static byte [] EncodeFrameHeader (INetworkFrame frameToEncode, byte sequenceNumber, out int index)
         {
             frameToEncode.SequenceNumber = sequenceNumber;
 
-            array [0] = (byte)frameToEncode.DataType;
-            array [1] = (byte)frameToEncode.TargetBufferId;
-            array [2] = sequenceNumber;
+            byte [] encodedByteArray = new byte [frameToEncode.TotalSize];
 
-            BitConverter.GetBytes (frameToEncode.TotalSize).CopyTo (array, Const.Communication.IndexToEncodeFrameTotalSize);
+            encodedByteArray [0] = (byte)frameToEncode.DataType;
+            encodedByteArray [1] = (byte)frameToEncode.TargetBufferId;
+            encodedByteArray [2] = sequenceNumber;
 
-            return Const.Communication.FrameHeaderSize;
+            BitConverter.GetBytes (frameToEncode.TotalSize).CopyTo (encodedByteArray, Const.Communication.IndexToEncodeFrameTotalSize);
+
+            index = Const.Communication.FrameHeaderSize;
+
+            return encodedByteArray;
         }
     }
 }
