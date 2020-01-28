@@ -58,7 +58,7 @@ namespace Gravicar.ARDrone3.Commands
 
             BitConverter.GetBytes ((ushort)CommandId).CopyTo (encodedByteArray, Const.Commands.IndexToEncodeCommandId);
 
-            EncodeCommandParametersTo (encodedByteArray, Const.Commands.CommandNoParametersSize);
+            EncodeCommandParametersTo (encodedByteArray, Const.Commands.IndexToEncodeCommandParameters);
 
             return encodedByteArray;
         }

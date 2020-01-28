@@ -25,7 +25,7 @@ namespace Gravicar.ARDrone3.Communication
 
             BitConverter.GetBytes (frameToEncode.TotalSize).CopyTo (encodedByteArray, Const.Communication.IndexToEncodeFrameTotalSize);
 
-            index = Const.Communication.FrameHeaderSize;
+            index = Const.Communication.IndexAfterEncodingFrameHeader;
 
             return encodedByteArray;
         }

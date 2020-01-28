@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-using Gravicar.ARDrone3.Commands;
+﻿using Gravicar.ARDrone3.Commands;
 using Gravicar.ARDrone3.Communication;
 
 namespace Gravicar.ARDrone3
@@ -9,21 +7,28 @@ namespace Gravicar.ARDrone3
     {
         internal static class Communication
         {
-            internal static readonly int IndexToEncodeFrameTotalSize = Marshal.SizeOf<EFrameDataType> () + Marshal.SizeOf<EFrameTargetBufferId> () + 
-                Marshal.SizeOf<byte> ();
+            private const int FrameHeaderBeginningSize = sizeof (EFrameDataType) + sizeof (EFrameTargetBufferId) + sizeof (byte);
 
-            internal static readonly int FrameHeaderSize = IndexToEncodeFrameTotalSize + Marshal.SizeOf<int> ();
+            internal const int IndexToEncodeFrameTotalSize = FrameHeaderBeginningSize;
 
-            internal static readonly int AcknowledgmentFrameTotalSize = FrameHeaderSize + Marshal.SizeOf<byte> ();            
+            internal const int FrameHeaderSize = FrameHeaderBeginningSize + sizeof (int);
+
+            internal const int IndexAfterEncodingFrameHeader = FrameHeaderSize;
+
+            internal const int AcknowledgmentFrameTotalSize = FrameHeaderSize + sizeof (byte);
         }
 
         internal static class Commands
         {
-            internal static readonly int IndexToEncodeCommandId = Marshal.SizeOf<ECommandProjectId> () + Marshal.SizeOf<ECommandClassId> ();
+            private const int CommandHeaderBeginningSize = sizeof (ECommandProjectId) + sizeof (ECommandClassId);
 
-            internal static readonly int CommandHeaderSize = IndexToEncodeCommandId + Marshal.SizeOf<ECommandId> ();
+            internal const int IndexToEncodeCommandId = Communication.IndexAfterEncodingFrameHeader + CommandHeaderBeginningSize;
 
-            internal static readonly int CommandNoParametersSize = Communication.FrameHeaderSize + CommandHeaderSize;
+            private const int CommandHeaderSize = CommandHeaderBeginningSize + sizeof (ECommandId);
+
+            internal const int CommandNoParametersSize = Communication.FrameHeaderSize + CommandHeaderSize;
+
+            internal const int IndexToEncodeCommandParameters = Communication.IndexAfterEncodingFrameHeader + CommandHeaderSize;
         }
     }
 }
