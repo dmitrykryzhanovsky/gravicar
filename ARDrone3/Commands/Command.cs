@@ -19,7 +19,7 @@ namespace Gravicar.ARDrone3.Commands
         {
             get
             {
-                return Const.Commands.CommandNoParametersSize + CommandParametersSize;
+                return Const.Encoding.Command.CommandNoParametersSize + CommandParametersSize;
             }
         }
 
@@ -56,9 +56,9 @@ namespace Gravicar.ARDrone3.Commands
             encodedByteArray [index]     = (byte)ProjectId;
             encodedByteArray [index + 1] = (byte)ClassId;
 
-            BitConverter.GetBytes ((ushort)CommandId).CopyTo (encodedByteArray, Const.Commands.IndexToEncodeCommandId);
+            BitConverter.GetBytes ((ushort)CommandId).CopyTo (encodedByteArray, Const.Encoding.Command.IndexToEncodeCommandId);
 
-            EncodeCommandParametersTo (encodedByteArray, Const.Commands.IndexToEncodeCommandParameters);
+            EncodeCommandParametersTo (encodedByteArray, Const.Encoding.Command.IndexToEncodeCommandParameters);
 
             return encodedByteArray;
         }

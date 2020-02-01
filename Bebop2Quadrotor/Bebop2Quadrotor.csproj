@@ -6,4 +6,8 @@
     <RootNamespace>Gravicar.Bebop2Quadrotor</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ARDrone3\ARDrone3.csproj" />
+  </ItemGroup>
+
 </Project>

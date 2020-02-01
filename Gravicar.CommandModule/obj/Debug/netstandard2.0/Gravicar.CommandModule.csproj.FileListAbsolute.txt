@@ -1,0 +1,8 @@
+D:\New Horizons\Gravicar\Gravicar.CommandModule\bin\Debug\netstandard2.0\Gravicar.CommandModule.deps.json
+D:\New Horizons\Gravicar\Gravicar.CommandModule\bin\Debug\netstandard2.0\Gravicar.CommandModule.dll
+D:\New Horizons\Gravicar\Gravicar.CommandModule\bin\Debug\netstandard2.0\Gravicar.CommandModule.pdb
+D:\New Horizons\Gravicar\Gravicar.CommandModule\obj\Debug\netstandard2.0\Gravicar.CommandModule.csproj.CoreCompileInputs.cache
+D:\New Horizons\Gravicar\Gravicar.CommandModule\obj\Debug\netstandard2.0\Gravicar.CommandModule.AssemblyInfoInputs.cache
+D:\New Horizons\Gravicar\Gravicar.CommandModule\obj\Debug\netstandard2.0\Gravicar.CommandModule.AssemblyInfo.cs
+D:\New Horizons\Gravicar\Gravicar.CommandModule\obj\Debug\netstandard2.0\Gravicar.CommandModule.dll
+D:\New Horizons\Gravicar\Gravicar.CommandModule\obj\Debug\netstandard2.0\Gravicar.CommandModule.pdb

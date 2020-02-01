@@ -6,3 +6,8 @@ D:\New Horizons\Gravicar\ARDrone3\bin\Debug\netstandard2.0\Gravicar.ARDrone3.dll
 D:\New Horizons\Gravicar\ARDrone3\bin\Debug\netstandard2.0\Gravicar.ARDrone3.pdb
 D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\Gravicar.ARDrone3.dll
 D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\Gravicar.ARDrone3.pdb
+D:\New Horizons\Gravicar\ARDrone3\bin\Debug\netstandard2.0\Gravicar.CommandModule.dll
+D:\New Horizons\Gravicar\ARDrone3\bin\Debug\netstandard2.0\Gravicar.CommandModule.pdb
+D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.csprojAssemblyReference.cache
+D:\New Horizons\Gravicar\ARDrone3\obj\Debug\netstandard2.0\ARDrone3.csproj.CopyComplete
+D:\New Horizons\Gravicar\ARDrone3\bin\Debug\netstandard2.0\Horizon.Network.dll

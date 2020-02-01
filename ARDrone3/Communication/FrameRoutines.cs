@@ -23,9 +23,9 @@ namespace Gravicar.ARDrone3.Communication
             encodedByteArray [1] = (byte)frameToEncode.TargetBufferId;
             encodedByteArray [2] = sequenceNumber;
 
-            BitConverter.GetBytes (frameToEncode.TotalSize).CopyTo (encodedByteArray, Const.Communication.IndexToEncodeFrameTotalSize);
+            BitConverter.GetBytes (frameToEncode.TotalSize).CopyTo (encodedByteArray, Const.Encoding.Frame.IndexToEncodeFrameTotalSize);
 
-            index = Const.Communication.IndexAfterEncodingFrameHeader;
+            index = Const.Encoding.Frame.IndexAfterEncodingFrameHeader;
 
             return encodedByteArray;
         }

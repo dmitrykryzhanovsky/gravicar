@@ -6,3 +6,10 @@ D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.Bebop
 D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.pdb
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.dll
 D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Gravicar.Bebop2Quadrotor.pdb
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.ARDrone3.dll
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.CommandModule.dll
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.ARDrone3.pdb
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Gravicar.CommandModule.pdb
+D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.csprojAssemblyReference.cache
+D:\New Horizons\Gravicar\Bebop2Quadrotor\obj\Debug\netstandard2.0\Bebop2Quadrotor.csproj.CopyComplete
+D:\New Horizons\Gravicar\Bebop2Quadrotor\bin\Debug\netstandard2.0\Horizon.Network.dll

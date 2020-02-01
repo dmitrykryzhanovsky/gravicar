@@ -21,7 +21,7 @@
         {
             get
             {
-                return Const.Communication.AcknowledgmentFrameTotalSize;
+                return Const.Encoding.Frame.AcknowledgmentFrameTotalSize;
             }
         }
 
