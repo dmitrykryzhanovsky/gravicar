@@ -6,7 +6,7 @@
     public interface INetworkFrame
     {
         /// <summary>
-        /// Тип данных, переселяемых в фрейме.
+        /// Тип данных, пересылаемых в фрейме.
         /// </summary>
         EFrameDataType DataType { get; }
 

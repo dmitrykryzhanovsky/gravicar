@@ -27,7 +27,8 @@ namespace unitTest.ARDrone3
             byte [] actual   = command.Encode (73);
 
             Assert.AreEqual (expected.Length, actual.Length);
-            for (int i = 0; i < actual.Length; i++) Assert.AreEqual (expected [i], actual [i]);
+            for (int i = 0; i < actual.Length; i++)
+                Assert.AreEqual (expected [i], actual [i]);
         }
     }
 }
