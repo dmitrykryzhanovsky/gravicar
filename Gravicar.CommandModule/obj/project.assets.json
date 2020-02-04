@@ -25,6 +25,39 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Gravicar.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Gravicar.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravicar.Communication.dll": {}
+        }
+      },
+      "Gravicar.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Gravicar.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravicar.Domain.dll": {}
+        }
+      },
+      "Gravicar.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Gravicar.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gravicar.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravicar.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -171,10 +204,27 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Gravicar.Communication/1.0.0": {
+      "type": "project",
+      "path": "../Gravicar.Communication/Gravicar.Communication.csproj",
+      "msbuildProject": "../Gravicar.Communication/Gravicar.Communication.csproj"
+    },
+    "Gravicar.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Gravicar.Domain/Gravicar.Domain.csproj",
+      "msbuildProject": "../Gravicar.Domain/Gravicar.Domain.csproj"
+    },
+    "Gravicar.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Gravicar.Infrastructure/Gravicar.Infrastructure.csproj",
+      "msbuildProject": "../Gravicar.Infrastructure/Gravicar.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Gravicar.Communication >= 1.0.0",
+      "Gravicar.Infrastructure >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -207,7 +257,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj": {
+              "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj"
+            },
+            "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj": {
+              "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

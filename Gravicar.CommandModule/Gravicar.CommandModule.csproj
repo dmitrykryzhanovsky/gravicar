@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Gravicar.Communication\Gravicar.Communication.csproj" />
+    <ProjectReference Include="..\Gravicar.Infrastructure\Gravicar.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

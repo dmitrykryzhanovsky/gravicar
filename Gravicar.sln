@@ -15,9 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "unitTest.ARDrone3", "unitTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gravicar Kernel", "Gravicar Kernel", "{F3021CCC-3E69-4EB2-9516-DAE0B2ED178F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.CommandModule", "Gravicar.CommandModule\Gravicar.CommandModule.csproj", "{BDB35B0D-3480-4ACF-A334-356CC16B7C5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravicar.CommandModule", "Gravicar.CommandModule\Gravicar.CommandModule.csproj", "{BDB35B0D-3480-4ACF-A334-356CC16B7C5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "runtimeTest.Bebop2Quadrotor.ConsoleApplication", "runtimeTest.Bebop2Quadrotor.ConsoleApplication\runtimeTest.Bebop2Quadrotor.ConsoleApplication.csproj", "{03511885-40AC-496F-9DA5-3BD7151A6A5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "runtimeTest.Bebop2Quadrotor.ConsoleApplication", "runtimeTest.Bebop2Quadrotor.ConsoleApplication\runtimeTest.Bebop2Quadrotor.ConsoleApplication.csproj", "{03511885-40AC-496F-9DA5-3BD7151A6A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Communication", "Gravicar.Communication\Gravicar.Communication.csproj", "{2516BB72-853B-4B63-8C07-66FFBF61854C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Domain", "Gravicar.Domain\Gravicar.Domain.csproj", "{DCB8A539-166A-441D-A16A-0FB9C13B4402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Infrastructure", "Gravicar.Infrastructure\Gravicar.Infrastructure.csproj", "{8D614FED-9733-4013-BC84-15411A35ACE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{03511885-40AC-496F-9DA5-3BD7151A6A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03511885-40AC-496F-9DA5-3BD7151A6A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03511885-40AC-496F-9DA5-3BD7151A6A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2516BB72-853B-4B63-8C07-66FFBF61854C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2516BB72-853B-4B63-8C07-66FFBF61854C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2516BB72-853B-4B63-8C07-66FFBF61854C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2516BB72-853B-4B63-8C07-66FFBF61854C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB8A539-166A-441D-A16A-0FB9C13B4402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB8A539-166A-441D-A16A-0FB9C13B4402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB8A539-166A-441D-A16A-0FB9C13B4402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB8A539-166A-441D-A16A-0FB9C13B4402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D614FED-9733-4013-BC84-15411A35ACE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D614FED-9733-4013-BC84-15411A35ACE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D614FED-9733-4013-BC84-15411A35ACE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D614FED-9733-4013-BC84-15411A35ACE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +73,9 @@ Global
 		{8F753C1B-D20C-44F5-AA4C-B23F179E70E2} = {2F0725FF-EC63-48AA-A978-D35CACCD4E11}
 		{BDB35B0D-3480-4ACF-A334-356CC16B7C5C} = {F3021CCC-3E69-4EB2-9516-DAE0B2ED178F}
 		{03511885-40AC-496F-9DA5-3BD7151A6A5B} = {7D3C547A-B7D5-44C1-9CC5-E44AF4201DC8}
+		{2516BB72-853B-4B63-8C07-66FFBF61854C} = {F3021CCC-3E69-4EB2-9516-DAE0B2ED178F}
+		{DCB8A539-166A-441D-A16A-0FB9C13B4402} = {F3021CCC-3E69-4EB2-9516-DAE0B2ED178F}
+		{8D614FED-9733-4013-BC84-15411A35ACE5} = {F3021CCC-3E69-4EB2-9516-DAE0B2ED178F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B66E0E3-CB31-46FF-812B-3AFF523449F7}

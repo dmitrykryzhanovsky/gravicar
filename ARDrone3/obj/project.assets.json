@@ -38,11 +38,48 @@
       "Gravicar.CommandModule/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Gravicar.Communication": "1.0.0",
+          "Gravicar.Infrastructure": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Gravicar.CommandModule.dll": {}
         },
         "runtime": {
           "bin/placeholder/Gravicar.CommandModule.dll": {}
+        }
+      },
+      "Gravicar.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Gravicar.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravicar.Communication.dll": {}
+        }
+      },
+      "Gravicar.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Gravicar.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravicar.Domain.dll": {}
+        }
+      },
+      "Gravicar.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Gravicar.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Gravicar.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Gravicar.Infrastructure.dll": {}
         }
       }
     }
@@ -226,6 +263,21 @@
       "type": "project",
       "path": "../Gravicar.CommandModule/Gravicar.CommandModule.csproj",
       "msbuildProject": "../Gravicar.CommandModule/Gravicar.CommandModule.csproj"
+    },
+    "Gravicar.Communication/1.0.0": {
+      "type": "project",
+      "path": "../Gravicar.Communication/Gravicar.Communication.csproj",
+      "msbuildProject": "../Gravicar.Communication/Gravicar.Communication.csproj"
+    },
+    "Gravicar.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Gravicar.Domain/Gravicar.Domain.csproj",
+      "msbuildProject": "../Gravicar.Domain/Gravicar.Domain.csproj"
+    },
+    "Gravicar.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Gravicar.Infrastructure/Gravicar.Infrastructure.csproj",
+      "msbuildProject": "../Gravicar.Infrastructure/Gravicar.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {

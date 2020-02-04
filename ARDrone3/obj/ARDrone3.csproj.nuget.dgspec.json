@@ -89,7 +89,174 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "projectReferences": {
+              "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj": {
+                "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj"
+              },
+              "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj": {
+                "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj",
+        "projectName": "Gravicar.Communication",
+        "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\Gravicar.Communication.csproj",
+        "packagesPath": "C:\\Users\\dmitry\\.nuget\\packages\\",
+        "outputPath": "D:\\New Horizons\\Gravicar\\Gravicar.Communication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\New Horizons\\Gravicar\\Gravicar.Domain\\Gravicar.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\New Horizons\\Gravicar\\Gravicar.Domain\\Gravicar.Domain.csproj",
+        "projectName": "Gravicar.Domain",
+        "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Domain\\Gravicar.Domain.csproj",
+        "packagesPath": "C:\\Users\\dmitry\\.nuget\\packages\\",
+        "outputPath": "D:\\New Horizons\\Gravicar\\Gravicar.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj",
+        "projectName": "Gravicar.Infrastructure",
+        "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\Gravicar.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\dmitry\\.nuget\\packages\\",
+        "outputPath": "D:\\New Horizons\\Gravicar\\Gravicar.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dmitry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\New Horizons\\Gravicar\\Gravicar.Domain\\Gravicar.Domain.csproj": {
+                "projectPath": "D:\\New Horizons\\Gravicar\\Gravicar.Domain\\Gravicar.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
