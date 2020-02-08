@@ -1,9 +1,0 @@
-D:\New Horizons\Gravicar\Gravicar.Domain\bin\Debug\netstandard2.0\Gravicar.Domain.deps.json
-D:\New Horizons\Gravicar\Gravicar.Domain\bin\Debug\netstandard2.0\Gravicar.Domain.dll
-D:\New Horizons\Gravicar\Gravicar.Domain\bin\Debug\netstandard2.0\Gravicar.Domain.pdb
-D:\New Horizons\Gravicar\Gravicar.Domain\obj\Debug\netstandard2.0\Gravicar.Domain.csproj.CoreCompileInputs.cache
-D:\New Horizons\Gravicar\Gravicar.Domain\obj\Debug\netstandard2.0\Gravicar.Domain.AssemblyInfoInputs.cache
-D:\New Horizons\Gravicar\Gravicar.Domain\obj\Debug\netstandard2.0\Gravicar.Domain.AssemblyInfo.cs
-D:\New Horizons\Gravicar\Gravicar.Domain\obj\Debug\netstandard2.0\Gravicar.Domain.dll
-D:\New Horizons\Gravicar\Gravicar.Domain\obj\Debug\netstandard2.0\Gravicar.Domain.pdb
-D:\New Horizons\Gravicar\Gravicar.Domain\obj\Debug\netstandard2.0\Gravicar.Domain.csprojAssemblyReference.cache

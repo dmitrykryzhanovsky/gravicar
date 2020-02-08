@@ -1,9 +1,0 @@
-D:\New Horizons\Gravicar\Gravicar.Communication\bin\Debug\netstandard2.0\Gravicar.Communication.deps.json
-D:\New Horizons\Gravicar\Gravicar.Communication\bin\Debug\netstandard2.0\Gravicar.Communication.dll
-D:\New Horizons\Gravicar\Gravicar.Communication\bin\Debug\netstandard2.0\Gravicar.Communication.pdb
-D:\New Horizons\Gravicar\Gravicar.Communication\obj\Debug\netstandard2.0\Gravicar.Communication.csproj.CoreCompileInputs.cache
-D:\New Horizons\Gravicar\Gravicar.Communication\obj\Debug\netstandard2.0\Gravicar.Communication.AssemblyInfoInputs.cache
-D:\New Horizons\Gravicar\Gravicar.Communication\obj\Debug\netstandard2.0\Gravicar.Communication.AssemblyInfo.cs
-D:\New Horizons\Gravicar\Gravicar.Communication\obj\Debug\netstandard2.0\Gravicar.Communication.dll
-D:\New Horizons\Gravicar\Gravicar.Communication\obj\Debug\netstandard2.0\Gravicar.Communication.pdb
-D:\New Horizons\Gravicar\Gravicar.Communication\obj\Debug\netstandard2.0\Gravicar.Communication.csprojAssemblyReference.cache
