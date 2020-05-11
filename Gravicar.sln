@@ -3,9 +3,45 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gravicar Kernel", "Gravicar Kernel", "{8279F42A-8543-47B2-A834-57F4A2DE1916}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parrot ARDrone 3", "Parrot ARDrone 3", "{4246BC0C-81EF-4362-836E-4A634BA83EC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bebop 2", "Bebop 2", "{65584D7D-5646-4F64-A674-7F208C47A4F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Domain", "Gravicar.Domain\Gravicar.Domain.csproj", "{57D395E7-B446-4B9F-8DFC-D9F26966DDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Infrastructure", "Gravicar.Infrastructure\Gravicar.Infrastructure.csproj", "{93003954-9B03-4CD2-AAAF-35BB9F602115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.HAL", "Gravicar.HAL\Gravicar.HAL.csproj", "{2D4D9675-3153-4BA7-9B66-65F89521A5EF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57D395E7-B446-4B9F-8DFC-D9F26966DDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D395E7-B446-4B9F-8DFC-D9F26966DDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D395E7-B446-4B9F-8DFC-D9F26966DDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D395E7-B446-4B9F-8DFC-D9F26966DDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93003954-9B03-4CD2-AAAF-35BB9F602115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93003954-9B03-4CD2-AAAF-35BB9F602115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93003954-9B03-4CD2-AAAF-35BB9F602115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93003954-9B03-4CD2-AAAF-35BB9F602115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4D9675-3153-4BA7-9B66-65F89521A5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4D9675-3153-4BA7-9B66-65F89521A5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4D9675-3153-4BA7-9B66-65F89521A5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4D9675-3153-4BA7-9B66-65F89521A5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65584D7D-5646-4F64-A674-7F208C47A4F0} = {4246BC0C-81EF-4362-836E-4A634BA83EC8}
+		{57D395E7-B446-4B9F-8DFC-D9F26966DDD8} = {8279F42A-8543-47B2-A834-57F4A2DE1916}
+		{93003954-9B03-4CD2-AAAF-35BB9F602115} = {8279F42A-8543-47B2-A834-57F4A2DE1916}
+		{2D4D9675-3153-4BA7-9B66-65F89521A5EF} = {8279F42A-8543-47B2-A834-57F4A2DE1916}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F489ACB-0C4D-4C71-A2CF-A0289144B175}
