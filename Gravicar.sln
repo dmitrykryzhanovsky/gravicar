@@ -3,58 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gravicar kernel", "Gravicar kernel", "{E17305A5-778C-45AF-B448-639959DD411C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parrot ARDrone3", "Parrot ARDrone3", "{4591B8B4-DB99-4CA8-B825-BB07B97B238F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "runtime test", "runtime test", "{976B312B-5F7D-440C-AF0C-BF61069FC0AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.ARDrone3", "Gravicar.ARDrone3\Gravicar.ARDrone3.csproj", "{39E89DAA-7C1F-4EA0-80BE-61BCB3603B66}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Bebop2Quadrotor", "Gravicar.Bebop2Quadrotor\Gravicar.Bebop2Quadrotor.csproj", "{CC1BB70F-3B50-4E7E-91F5-A4732BB8A7B7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.HAL", "Gravicar.HAL\Gravicar.HAL.csproj", "{7C8AA585-DC6F-4828-A726-541C24794898}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Infrastructure", "Gravicar.Infrastructure\Gravicar.Infrastructure.csproj", "{1B278BFC-7ABD-44F7-B113-B66473F41AD2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Domain", "Gravicar.Domain\Gravicar.Domain.csproj", "{888DE5E8-3709-4854-80E5-C69C94A96009}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{39E89DAA-7C1F-4EA0-80BE-61BCB3603B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39E89DAA-7C1F-4EA0-80BE-61BCB3603B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39E89DAA-7C1F-4EA0-80BE-61BCB3603B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39E89DAA-7C1F-4EA0-80BE-61BCB3603B66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC1BB70F-3B50-4E7E-91F5-A4732BB8A7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC1BB70F-3B50-4E7E-91F5-A4732BB8A7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC1BB70F-3B50-4E7E-91F5-A4732BB8A7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC1BB70F-3B50-4E7E-91F5-A4732BB8A7B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C8AA585-DC6F-4828-A726-541C24794898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C8AA585-DC6F-4828-A726-541C24794898}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C8AA585-DC6F-4828-A726-541C24794898}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C8AA585-DC6F-4828-A726-541C24794898}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B278BFC-7ABD-44F7-B113-B66473F41AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B278BFC-7ABD-44F7-B113-B66473F41AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B278BFC-7ABD-44F7-B113-B66473F41AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B278BFC-7ABD-44F7-B113-B66473F41AD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{888DE5E8-3709-4854-80E5-C69C94A96009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{888DE5E8-3709-4854-80E5-C69C94A96009}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{888DE5E8-3709-4854-80E5-C69C94A96009}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{888DE5E8-3709-4854-80E5-C69C94A96009}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{39E89DAA-7C1F-4EA0-80BE-61BCB3603B66} = {4591B8B4-DB99-4CA8-B825-BB07B97B238F}
-		{CC1BB70F-3B50-4E7E-91F5-A4732BB8A7B7} = {4591B8B4-DB99-4CA8-B825-BB07B97B238F}
-		{7C8AA585-DC6F-4828-A726-541C24794898} = {E17305A5-778C-45AF-B448-639959DD411C}
-		{1B278BFC-7ABD-44F7-B113-B66473F41AD2} = {E17305A5-778C-45AF-B448-639959DD411C}
-		{888DE5E8-3709-4854-80E5-C69C94A96009} = {E17305A5-778C-45AF-B448-639959DD411C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F489ACB-0C4D-4C71-A2CF-A0289144B175}
