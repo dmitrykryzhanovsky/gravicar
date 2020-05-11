@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gravicar.Infrastructure
+namespace Gravicar.Architecture
 {
     /// <summary>
     /// Инкапсулирует команду в очереди команд.

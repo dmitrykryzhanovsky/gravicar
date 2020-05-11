@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Gravicar.Infrastructure
+namespace Gravicar.Architecture
 {
     /// <summary>
     /// Очередь команд.

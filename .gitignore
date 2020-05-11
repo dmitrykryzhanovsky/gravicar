@@ -20,3 +20,7 @@ Gravicar.Infrastructure/bin/
 Gravicar.Infrastructure/obj/
 
 .vs/
+
+Gravicar.Architecture/bin/
+
+Gravicar.Architecture/obj/

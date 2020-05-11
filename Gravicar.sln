@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bebop 2", "Bebop 2", "{6558
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Domain", "Gravicar.Domain\Gravicar.Domain.csproj", "{57D395E7-B446-4B9F-8DFC-D9F26966DDD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Infrastructure", "Gravicar.Infrastructure\Gravicar.Infrastructure.csproj", "{93003954-9B03-4CD2-AAAF-35BB9F602115}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Architecture", "Gravicar.Architecture\Gravicar.Architecture.csproj", "{93003954-9B03-4CD2-AAAF-35BB9F602115}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.HAL", "Gravicar.HAL\Gravicar.HAL.csproj", "{2D4D9675-3153-4BA7-9B66-65F89521A5EF}"
 EndProject
