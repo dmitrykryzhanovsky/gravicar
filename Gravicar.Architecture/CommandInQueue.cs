@@ -30,7 +30,7 @@ namespace Gravicar.Architecture
 
         private static readonly DateTime ExecutionStartTimeDefaultValue = DateTime.MaxValue;
 
-        private static readonly TimeSpan ExecutionDurationDefaultValue = TimeSpan.MaxValue;
+        internal static readonly TimeSpan ExecutionDurationDefaultValue = TimeSpan.MaxValue;
 
         /// <summary>
         /// Исходная команда, которую необходимо передать на дрон.
@@ -76,10 +76,6 @@ namespace Gravicar.Architecture
             Status             = ECommandInQueueStatus.NotTakenYet;
             ExecutionStartTime = ExecutionStartTimeDefaultValue;
             ExecutionDuration  = executionDuration;
-        }
-
-        internal CommandInQueue (Command command, int id) : this (command, id, ExecutionDurationDefaultValue)
-        {
         }
 
         /// <summary>

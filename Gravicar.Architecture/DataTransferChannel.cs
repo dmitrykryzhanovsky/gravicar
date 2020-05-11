@@ -6,7 +6,7 @@ namespace Gravicar.Architecture
     /// <summary>
     /// Инкапсулирует функциональность для работы с каналами данных (команды, данные с сенсоров, видеопоток, подтверждения операций и т.д.)
     /// </summary>
-    internal abstract class DataTransferChannel : IDisposable
+    public abstract class DataTransferChannel : IDisposable
     {
         private Thread                  _dataProcessingThread;
         private CancellationTokenSource _cancellationTokenSource;
@@ -19,7 +19,7 @@ namespace Gravicar.Architecture
             _dataProcessingThread.IsBackground = false;
         }
 
-        internal void Start ()
+        public void Start ()
         {
             Prestart ();
 
@@ -30,7 +30,7 @@ namespace Gravicar.Architecture
 
         protected abstract void Prestart ();
 
-        internal void Cancel ()
+        public void Cancel ()
         {
             _cancellationTokenSource.Cancel ();
 
