@@ -11,6 +11,14 @@ namespace Gravicar.Architecture
         private Thread                  _dataProcessingThread;
         private CancellationTokenSource _cancellationTokenSource;
 
+        protected bool IsCancellationRequested
+        {
+            get
+            {
+                return _cancellationTokenSource.IsCancellationRequested;
+            }
+        }
+
         protected DataTransferChannel ()
         {
             _dataProcessingThread    = new Thread (Loop);
