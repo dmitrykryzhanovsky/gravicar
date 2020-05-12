@@ -6,18 +6,18 @@ namespace Gravicar.Architecture
     /// <summary>
     /// Очередь команд.
     /// </summary>
-    public class CommandQueue : Queue<CommandInQueue>
+    internal class CommandQueue : Queue<CommandInQueue>
     {
         private readonly object _queueLocker = new object ();
 
         private int _idCounter;
 
-        public CommandQueue () : base ()
+        internal CommandQueue () : base ()
         {
             _idCounter = 0;
         }
 
-        public void PushCommand (Command command, TimeSpan executionDuration)
+        internal void PushCommand (Command command, TimeSpan executionDuration)
         {
             lock (_queueLocker)
             {
@@ -25,7 +25,7 @@ namespace Gravicar.Architecture
             }
         }
 
-        public CommandInQueue PullCommand ()
+        internal CommandInQueue PullCommand ()
         {
             lock (_queueLocker)
             {

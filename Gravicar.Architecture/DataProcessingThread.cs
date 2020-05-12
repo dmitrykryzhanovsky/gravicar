@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading;
 
-namespace Gravicar.Communication
+namespace Gravicar.Architecture
 {
     /// <summary>
-    /// Инкапсулирует функциональность для работы с каналами данных (команды, данные с сенсоров, видеопоток, подтверждения операций и т.д.)
+    /// Инкапсулирует функциональность для работы с каналами (потоками) данных (команды, данные с сенсоров, видеопоток, подтверждения операций и т.д.)
     /// </summary>
-    public abstract class DataTransferChannel : IDisposable
+    public abstract class DataProcessingThread : IDisposable
     {
         private Thread                  _dataProcessingThread;
         private CancellationTokenSource _cancellationTokenSource;
@@ -19,7 +19,7 @@ namespace Gravicar.Communication
             }
         }
 
-        protected DataTransferChannel ()
+        protected DataProcessingThread ()
         {
             _dataProcessingThread    = new Thread (Loop);
             _cancellationTokenSource = null;
@@ -53,7 +53,7 @@ namespace Gravicar.Communication
         }
 
         /// <summary>
-        /// Цикл работы потока, связанного с каналом данных.
+        /// Цикл работы потока, в котором происходит обработка данных.
         /// </summary>
         protected abstract void Loop ();
     }

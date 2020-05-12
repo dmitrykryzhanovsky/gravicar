@@ -5,4 +5,8 @@
     <RootNamespace>Gravicar</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Gravicar.Communication\Gravicar.Communication.csproj" />
+  </ItemGroup>
+
 </Project>

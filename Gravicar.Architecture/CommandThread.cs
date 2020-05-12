@@ -1,20 +1,18 @@
 ﻿using System;
 
-using Gravicar.Architecture;
-
-namespace Gravicar.Communication
+namespace Gravicar.Architecture
 {
     /// <summary>
-    /// Инкапсулирует функциональность для организации очереди команд и их пересылки по сети.
+    /// Инкапсулирует функциональность для организации очереди команд и последующих действий с ними (например, пересылки по сети).
     /// </summary>
-    public class CommandChannel : DataTransferChannel
+    public class CommandThread : DataProcessingThread
     {
         private CommandQueue   _queue;
         private CommandInQueue _commandBeingExecutedRightNow;
 
         public event Action<Command> SendCommandToDroneEvent;
 
-        public CommandChannel () : base ()
+        public CommandThread () : base ()
         {
             _queue = new CommandQueue ();
         }
