@@ -2,7 +2,7 @@
 
 using Gravicar.Communication;
 
-namespace Gravicar.CommandModule
+namespace Gravicar
 {
     public abstract class UAV : IDisposable
     {

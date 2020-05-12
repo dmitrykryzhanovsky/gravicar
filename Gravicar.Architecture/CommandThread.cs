@@ -5,14 +5,14 @@ namespace Gravicar.Architecture
     /// <summary>
     /// Инкапсулирует функциональность для организации очереди команд и последующих действий с ними (например, пересылки по сети).
     /// </summary>
-    public class CommandThread : DataProcessingThread
+    internal class CommandThread : DataProcessingThread
     {
         private CommandQueue   _queue;
         private CommandInQueue _commandBeingExecutedRightNow;
 
         public event Action<Command> SendCommandToDroneEvent;
 
-        public CommandThread () : base ()
+        internal CommandThread () : base ()
         {
             _queue = new CommandQueue ();
         }
@@ -37,7 +37,7 @@ namespace Gravicar.Architecture
         /// <summary>
         /// Ставит команду в очередь на исполнение.
         /// </summary>
-        public void PushCommand (Command command)
+        internal void PushCommand (Command command)
         {
             _queue.PushCommand (command, CommandInQueue.ExecutionDurationDefaultValue);
         }
