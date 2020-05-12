@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Gravicar.Architecture
+namespace Gravicar.Communication
 {
     /// <summary>
     /// Инкапсулирует функциональность для работы с каналами данных (команды, данные с сенсоров, видеопоток, подтверждения операций и т.д.)

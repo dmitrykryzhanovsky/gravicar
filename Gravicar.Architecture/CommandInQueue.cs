@@ -5,7 +5,7 @@ namespace Gravicar.Architecture
     /// <summary>
     /// Инкапсулирует команду в очереди команд.
     /// </summary>
-    internal class CommandInQueue
+    public class CommandInQueue
     {
         /// <summary>
         /// Статус команды, находящейся в очереди команд.
@@ -30,13 +30,13 @@ namespace Gravicar.Architecture
 
         private static readonly DateTime ExecutionStartTimeDefaultValue = DateTime.MaxValue;
 
-        internal static readonly TimeSpan ExecutionDurationDefaultValue = TimeSpan.MaxValue;
+        public static readonly TimeSpan ExecutionDurationDefaultValue = TimeSpan.MaxValue;
 
         /// <summary>
         /// Исходная команда, которую необходимо передать на дрон.
         /// </summary>
         /// <remarks>Имеется ввиду команда сама по себе, не привязанная к очереди.</remarks>
-        internal Command Command { get; private set; }
+        public Command Command { get; private set; }
 
         /// <summary>
         /// Идентификатор команды в очереди.
@@ -61,7 +61,7 @@ namespace Gravicar.Architecture
         /// <summary>
         /// Возвращает TRUE, если время, отведённое для выполнения команды, ещё не истекло.
         /// </summary>
-        internal bool ExecutionTimeNotExpired
+        public bool ExecutionTimeNotExpired
         {
             get
             {
@@ -81,7 +81,7 @@ namespace Gravicar.Architecture
         /// <summary>
         /// Переводим команду на обработку / выполнение.
         /// </summary>
-        internal void Execute ()
+        public void Execute ()
         {
             if (Status != ECommandInQueueStatus.NotTakenYet) throw new InvalidOperationException ();
 
@@ -92,7 +92,7 @@ namespace Gravicar.Architecture
         /// <summary>
         /// Переводим команду в состояние «Выполнена / отправлена» (либо снимаем с выполнения).
         /// </summary>
-        internal void Finish ()
+        public void Finish ()
         {
             if (Status != ECommandInQueueStatus.BeingProcessed) throw new InvalidOperationException ();
 

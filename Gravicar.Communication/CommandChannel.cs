@@ -1,6 +1,8 @@
 ﻿using System;
 
-namespace Gravicar.Architecture
+using Gravicar.Architecture;
+
+namespace Gravicar.Communication
 {
     /// <summary>
     /// Инкапсулирует функциональность для организации очереди команд и их пересылки по сети.
