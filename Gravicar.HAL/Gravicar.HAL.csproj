@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Gravicar.Architecture\Gravicar.Architecture.csproj" />
     <ProjectReference Include="..\Gravicar.Communication\Gravicar.Communication.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,6 @@
 ﻿using System;
 
+using Gravicar.Architecture;
 using Gravicar.Communication;
 
 namespace Gravicar
@@ -17,18 +18,17 @@ namespace Gravicar
 
         private ESessionStatus _sessionStatus;
 
-        private CommunicationController _communicationController;
+        private DataProcessingThreadController _dataProcessingThreadController;
+        private CommunicationController        _communicationController;
 
-        private DataThreadController _dataThreadController;
-
-        protected AIVehicle (CommunicationParams communicationParams)
+        protected UAV (CommunicationParams communicationParams)
         {
             _sessionStatus = ESessionStatus.Disconnected;
 
-            _communicationController = new CommunicationController (communicationParams);
-            _dataThreadController    = new DataThreadController ();
+            _dataProcessingThreadController = new DataProcessingThreadController ();
+            _communicationController        = new CommunicationController (communicationParams);
 
-            _dataThreadController.SendCommandToDroneEvent += SendCommandToDrone;
+            _dataProcessingThreadController.SendCommandToDroneEvent += SendCommandToDrone;
         }
 
         public bool StartSession ()
@@ -37,9 +37,9 @@ namespace Gravicar
 
             if (_communicationController.StartSession () == true)
             {
-                _dataThreadController.StartThread ();
-
                 _sessionStatus = ESessionStatus.Connected;
+
+                _dataProcessingThreadController.StartProcessingThreads ();                
 
                 return true;
             }
@@ -56,7 +56,7 @@ namespace Gravicar
 
         private void EndSessionAction ()
         {
-            _dataThreadController.CancelThread ();
+            _dataProcessingThreadController.CancelProcessingThreads ();
             _communicationController.EndSession ();
 
             _sessionStatus = ESessionStatus.Disconnected;
@@ -66,20 +66,20 @@ namespace Gravicar
         {
             if (_sessionStatus == ESessionStatus.Connected) EndSessionAction ();
 
-            _dataThreadController.Dispose ();
+            _dataProcessingThreadController.Dispose ();
             _communicationController.Dispose ();
 
             _sessionStatus = ESessionStatus.Disposed;
         }
 
-        protected void PushCommand (DroneCommand command)
+        protected void PushCommand (Command command)
         {
-            _dataThreadController.PushCommand (command);
+            _dataProcessingThreadController.PushCommand (command);
         }
 
-        private void SendCommandToDrone (DroneCommand command)
+        private void SendCommandToDrone (Command command)
         {
-            _communicationController.SendCommandToDrone (command.Encode ());
+            _communicationController.SendCommandToDrone (command);
         }
     }
 }

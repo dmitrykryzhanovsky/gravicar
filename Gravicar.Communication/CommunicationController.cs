@@ -24,12 +24,17 @@ namespace Gravicar.Communication
 
         public void EndSession ()
         {
-            _sendCommandToDroneConnection.CloseConnection ();            
+            _sendCommandToDroneConnection.CloseConnection ();
         }
 
         public void Dispose ()
         {
             _sendCommandToDroneConnection.Dispose ();
+        }
+
+        public void SendCommandToDrone (Command command)
+        {
+            _sendCommandToDroneConnection.SendBytes (command.Encode ());
         }
     }
 }
