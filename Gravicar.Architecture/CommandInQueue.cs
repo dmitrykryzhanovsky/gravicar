@@ -36,7 +36,7 @@ namespace Gravicar.Architecture
         /// Исходная команда, которую необходимо передать на дрон.
         /// </summary>
         /// <remarks>Имеется ввиду команда сама по себе, не привязанная к очереди.</remarks>
-        internal Command Command { get; private set; }
+        internal ICommand Command { get; private set; }
 
         /// <summary>
         /// Идентификатор команды в очереди.
@@ -69,7 +69,7 @@ namespace Gravicar.Architecture
             }
         }
 
-        internal CommandInQueue (Command command, int id, TimeSpan executionDuration)
+        internal CommandInQueue (ICommand command, int id, TimeSpan executionDuration)
         {
             Command            = command;
             Id                 = id;

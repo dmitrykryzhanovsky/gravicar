@@ -1,17 +1,13 @@
 ﻿namespace Gravicar
 {
     /// <summary>
-    /// Базовый класс для команд дрона.
+    /// Базовый интерфейс для команд дрона.
     /// </summary>
-    public abstract class Command
+    public interface ICommand
     {
-        protected Command ()
-        {
-        }
-
         /// <summary>
         /// Кодирует команду в виде массива байтов для передачи её по сети.
         /// </summary>
-        public abstract byte [] Encode ();
+        byte [] Encode ();
     }
 }

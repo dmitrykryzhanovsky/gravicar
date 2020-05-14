@@ -6,7 +6,7 @@ namespace Gravicar.Architecture
     {
         private CommandThread _sendCommandToDroneThread;
 
-        public event Action<Command> SendCommandToDroneEvent;
+        public event Action<ICommand> SendCommandToDroneEvent;
 
         public DataProcessingThreadController ()
         {
@@ -30,12 +30,12 @@ namespace Gravicar.Architecture
             _sendCommandToDroneThread.Dispose ();
         }
 
-        public void PushCommand (Command command)
+        public void PushCommand (ICommand command)
         {
             _sendCommandToDroneThread.PushCommand (command);
         }
 
-        private void SendCommandToDrone (Command command)
+        private void SendCommandToDrone (ICommand command)
         {
             SendCommandToDroneEvent (command);
         }

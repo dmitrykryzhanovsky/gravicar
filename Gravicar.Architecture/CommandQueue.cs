@@ -17,7 +17,7 @@ namespace Gravicar.Architecture
             _idCounter = 0;
         }
 
-        internal void PushCommand (Command command, TimeSpan executionDuration)
+        internal void PushCommand (ICommand command, TimeSpan executionDuration)
         {
             lock (_queueLocker)
             {

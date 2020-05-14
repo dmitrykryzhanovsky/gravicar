@@ -72,12 +72,12 @@ namespace Gravicar
             _sessionStatus = ESessionStatus.Disposed;
         }
 
-        protected void PushCommand (Command command)
+        protected void PushCommand (ICommand command)
         {
             _dataProcessingThreadController.PushCommand (command);
         }
 
-        private void SendCommandToDrone (Command command)
+        private void SendCommandToDrone (ICommand command)
         {
             _communicationController.SendCommandToDrone (command);
         }

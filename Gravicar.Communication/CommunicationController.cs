@@ -32,7 +32,7 @@ namespace Gravicar.Communication
             _sendCommandToDroneConnection.Dispose ();
         }
 
-        public void SendCommandToDrone (Command command)
+        public void SendCommandToDrone (ICommand command)
         {
             _sendCommandToDroneConnection.SendBytes (command.Encode ());
         }

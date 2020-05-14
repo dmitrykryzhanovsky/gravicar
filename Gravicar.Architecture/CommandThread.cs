@@ -10,7 +10,7 @@ namespace Gravicar.Architecture
         private CommandQueue   _queue;
         private CommandInQueue _commandBeingExecutedRightNow;
 
-        public event Action<Command> SendCommandToDroneEvent;
+        public event Action<ICommand> SendCommandToDroneEvent;
 
         internal CommandThread () : base ()
         {
@@ -37,7 +37,7 @@ namespace Gravicar.Architecture
         /// <summary>
         /// Ставит команду в очередь на исполнение.
         /// </summary>
-        internal void PushCommand (Command command)
+        internal void PushCommand (ICommand command)
         {
             _queue.PushCommand (command, CommandInQueue.ExecutionDurationDefaultValue);
         }
