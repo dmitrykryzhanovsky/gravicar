@@ -1,5 +1,8 @@
 ﻿namespace Gravicar.ARDrone3.Commands
 {
+    /// <summary>
+    /// Команда взлёта.
+    /// </summary>
     internal class TakeOffCommand : ARDrone3Command
     {
         internal static readonly TakeOffCommand TakeOff = new TakeOffCommand ();

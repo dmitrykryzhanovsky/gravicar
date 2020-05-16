@@ -75,23 +75,35 @@ namespace Gravicar.ARDrone3
             internal const string ControllerNameDefault = "controller_name";
 
             /// <summary>
-            /// Значение поля status в JSON-запросе, получаемом от дрона после поиска и установки первичного соединения, которое 
-            /// соответствует успешному завершению операции.
+            /// Значение поля status в JSON-запросе, получаемом от дрона после поиска и установки первичного соединения, которое соответствует 
+            /// успешному завершению операции.
             /// </summary>
             internal const int VToC_ConnectionIsCorrect = 0;
         }
 
         internal static class Frame
         {
+            /// <summary>
+            /// Размер заголовка фрейма, пересылаемого по сети.
+            /// </summary>
             internal const int HeaderLength = sizeof (EFrameDataType) + sizeof (EFrameTargetBufferId) + sizeof (byte) + sizeof (int);
         }
 
         internal static class Command
         {
+            /// <summary>
+            /// Размер заголовка команды, пересылаемой по сети.
+            /// </summary>
             internal const int HeaderLength = sizeof (ECommandProject) + sizeof (ECommandClass) + sizeof (ECommandId);
 
+            /// <summary>
+            /// Суммарный размер заголовков фрейма и команды.
+            /// </summary>
             internal const int FrameAndCommandHeaderLength = Frame.HeaderLength + Command.HeaderLength;
 
+            /// <summary>
+            /// Суммарный размер заголовков фрейма и команды.
+            /// </summary>
             internal static class ParametersSegmentLength
             {
                 internal const int TakeOff = 0;

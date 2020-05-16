@@ -1,5 +1,8 @@
 ﻿namespace Gravicar.ARDrone3.Commands
 {
+    /// <summary>
+    /// Команда посадки.
+    /// </summary>
     internal class LandCommand : ARDrone3Command
     {
         internal static readonly LandCommand Land = new LandCommand ();

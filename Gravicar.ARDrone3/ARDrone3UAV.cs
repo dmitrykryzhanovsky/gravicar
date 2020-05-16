@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Net.Sockets;
 
+// GitLab
 // Глянуть, нет ли в .NET Standard базового класса для UdpClient и TcpClient
 //using Newtonsoft.Json.Linq;
+
+using Wormhole.Network;
 
 using Gravicar.ARDrone3.Commands;
 
@@ -17,9 +20,9 @@ namespace Gravicar.ARDrone3
         /// <summary>
         /// Выполняет первоначальный поиск дрона при установке сетевого соединения.
         /// </summary>
-        /// <param name="responseJson">JSON,возвращаемый дроном. Если при установке соединения или записи / чтении данных произошла 
-        /// ошибка, <paramref name="responseJson"/> будет равен String.Empty. Подробнее о формате JSON’ов, пересылаемых при поиске 
-        /// дрона и установке первичного соединения, см. ARSDK_Protocols.pdf, раздел 1.2.1.</param>
+        /// <param name="responseJson">JSON,возвращаемый дроном. Если при установке соединения или записи / чтении данных произошла ошибка, 
+        /// responseJson будет равен String.Empty. Подробнее о формате JSON’ов, пересылаемых при поиске дрона и установке первичного соединения, 
+        /// см. ARSDK_Protocols.pdf, раздел 1.2.1.</param>
         /// <returns><list type="bullet">
         /// <item>TRUE – операция прошла успешно, соединение установлено корректно.</item>
         /// <item>FALSE – что-то пошло не так.Возможные причины:<list type="bullet">
@@ -61,7 +64,7 @@ namespace Gravicar.ARDrone3
 
             catch
             {
-                responseJson = String.Empty;
+                responseJson       = String.Empty;
                 successedOperation = false;
             }
 

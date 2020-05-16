@@ -15,4 +15,10 @@
     <ProjectReference Include="..\Gravicar.HAL\Gravicar.HAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Wormhole.Network">
+      <HintPath>..\..\Wormhole\Wormhole.Network\bin\Release\netstandard2.0\Wormhole.Network.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

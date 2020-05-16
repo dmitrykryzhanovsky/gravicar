@@ -4,7 +4,8 @@ using System.Threading;
 namespace Gravicar.Architecture
 {
     /// <summary>
-    /// Инкапсулирует функциональность для работы с каналами (потоками) данных (команды, данные с сенсоров, видеопоток, подтверждения операций и т.д.)
+    /// Инкапсулирует функциональность для работы с каналами (потоками) данных разного типа (команды, данные с сенсоров, видеопоток, 
+    /// подтверждения операций и т.д.)
     /// </summary>
     internal abstract class DataProcessingThread : IDisposable
     {
@@ -36,6 +37,9 @@ namespace Gravicar.Architecture
             _dataProcessingThread.Start ();
         }
 
+        /// <summary>
+        /// Действия, выполняемые перед запуском потока.
+        /// </summary>
         protected abstract void Prestart ();
 
         internal void Cancel ()
@@ -45,6 +49,9 @@ namespace Gravicar.Architecture
             FinalizeCancelling ();
         }
 
+        /// <summary>
+        /// Действия, выполняемые сразу после отмены потока.
+        /// </summary>
         protected abstract void FinalizeCancelling ();
 
         public virtual void Dispose ()

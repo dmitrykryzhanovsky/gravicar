@@ -2,6 +2,9 @@
 
 namespace Gravicar.Architecture
 {
+    /// <summary>
+    /// Контроллер для организации работы всех каналов (потоков обработки) данных.
+    /// </summary>
     public class DataProcessingThreadController : IDisposable
     {
         private CommandThread _sendCommandToDroneThread;

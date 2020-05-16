@@ -1,7 +1,7 @@
 ﻿namespace Gravicar
 {
     /// <summary>
-    /// Базовый интерфейс для команд дрона.
+    /// Интерфейс для команд дрона.
     /// </summary>
     public interface ICommand
     {

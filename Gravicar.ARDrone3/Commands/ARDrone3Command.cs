@@ -2,6 +2,9 @@
 
 namespace Gravicar.ARDrone3.Commands
 {
+    /// <summary>
+    /// Базовый класс для команды ARDrone 3.
+    /// </summary>
     internal abstract class ARDrone3Command : NetworkFrame, ICommand
     {
         protected ARDrone3Command (ECommandProject commandProject, ECommandClass commandClass, ECommandId commandId, int commandParametersSegmentLength) : 
@@ -12,12 +15,12 @@ namespace Gravicar.ARDrone3.Commands
 
         public byte [] Encode ()
         {
-            EncodeCommandParametersTo (Const.Command.FrameAndCommandHeaderLength);
+            EncodeCommandParameters (Const.Command.FrameAndCommandHeaderLength);
 
             return _encoded;
         }        
 
-        protected virtual void EncodeCommandParametersTo (int index)
+        protected virtual void EncodeCommandParameters (int index)
         {
         }
     }
