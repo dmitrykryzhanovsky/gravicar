@@ -17,9 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravicar.HAL", "Gravicar.HA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravicar.Communication", "Gravicar.Communication\Gravicar.Communication.csproj", "{9037CCD9-3916-4C54-AAB2-28903CDE71B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.ARDrone3", "Gravicar.ARDrone3\Gravicar.ARDrone3.csproj", "{35816D54-4FAF-4F0B-8C23-FC10D0E7144D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravicar.ARDrone3", "Gravicar.ARDrone3\Gravicar.ARDrone3.csproj", "{35816D54-4FAF-4F0B-8C23-FC10D0E7144D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravicar.Bebop2", "Gravicar.Bebop2\Gravicar.Bebop2.csproj", "{A7A9F639-F498-4F3C-A106-50FC1256D482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravicar.Bebop2", "Gravicar.Bebop2\Gravicar.Bebop2.csproj", "{A7A9F639-F498-4F3C-A106-50FC1256D482}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Debug and Test", "Debug and Test", "{A6B91458-EC8B-4F22-8122-17632CD233E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flightOperation.Gravicar.Bebop2", "flightOperation.Gravicar.Bebop2\flightOperation.Gravicar.Bebop2.csproj", "{3C775F9C-D349-492A-A47F-F35FA0FA252A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{A7A9F639-F498-4F3C-A106-50FC1256D482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7A9F639-F498-4F3C-A106-50FC1256D482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7A9F639-F498-4F3C-A106-50FC1256D482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C775F9C-D349-492A-A47F-F35FA0FA252A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C775F9C-D349-492A-A47F-F35FA0FA252A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C775F9C-D349-492A-A47F-F35FA0FA252A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C775F9C-D349-492A-A47F-F35FA0FA252A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,8 @@ Global
 		{9037CCD9-3916-4C54-AAB2-28903CDE71B6} = {8279F42A-8543-47B2-A834-57F4A2DE1916}
 		{35816D54-4FAF-4F0B-8C23-FC10D0E7144D} = {4246BC0C-81EF-4362-836E-4A634BA83EC8}
 		{A7A9F639-F498-4F3C-A106-50FC1256D482} = {65584D7D-5646-4F64-A674-7F208C47A4F0}
+		{A6B91458-EC8B-4F22-8122-17632CD233E6} = {4246BC0C-81EF-4362-836E-4A634BA83EC8}
+		{3C775F9C-D349-492A-A47F-F35FA0FA252A} = {A6B91458-EC8B-4F22-8122-17632CD233E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F489ACB-0C4D-4C71-A2CF-A0289144B175}

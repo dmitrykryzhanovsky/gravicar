@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Gravicar.Architecture\Gravicar.Architecture.csproj" />
     <ProjectReference Include="..\Gravicar.Communication\Gravicar.Communication.csproj" />
     <ProjectReference Include="..\Gravicar.Domain\Gravicar.Domain.csproj" />

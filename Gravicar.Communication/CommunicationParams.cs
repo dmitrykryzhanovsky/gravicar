@@ -10,7 +10,7 @@ namespace Gravicar.Communication
 
         internal EConnectionType SendCommands_CToV_ConnectionType { get; private set; }
 
-        internal CommunicationParams (string droneHostAddress, 
+        public CommunicationParams (string droneHostAddress, 
             int sendCommandsCToVPort, EConnectionType sendCommandsCToVConnectionType)
         {
             DroneHostAddress                 = droneHostAddress;

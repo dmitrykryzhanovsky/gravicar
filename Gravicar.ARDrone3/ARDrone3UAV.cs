@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Net.Sockets;
 
-// GitLab
-// Глянуть, нет ли в .NET Standard базового класса для UdpClient и TcpClient
-//using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Linq;
 
 using Wormhole.Network;
 
 using Gravicar.ARDrone3.Commands;
+using Gravicar.Communication;
 
 namespace Gravicar.ARDrone3
 {
     public abstract class ARDrone3UAV : UAV
     {
-        protected ARDrone3UAV () : base (null)
+        protected ARDrone3UAV () : base (new CommunicationParams (Const.NetworkConnection.DroneHostAddress, 
+            Const.NetworkConnection.Port.CToV.SendCommands, Const.NetworkConnection.ConnectionType.CToV.SendCommands))
         {
         }
 
