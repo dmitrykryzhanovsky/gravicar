@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gravicar.Architecture\Gravicar.Architecture.csproj" />
+    <ProjectReference Include="..\Gravicar.Communication\Gravicar.Communication.csproj" />
+    <ProjectReference Include="..\Gravicar.Domain\Gravicar.Domain.csproj" />
+    <ProjectReference Include="..\Gravicar.HAL\Gravicar.HAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Wormhole.Network">
+      <HintPath>..\..\Wormhole\Wormhole.Network\bin\Release\netstandard2.0\Wormhole.Network.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

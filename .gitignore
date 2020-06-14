@@ -20,3 +20,19 @@ Gravicar.Infrastructure/bin/
 Gravicar.Infrastructure/obj/
 
 .vs/
+
+Gravicar.Architecture/bin/
+
+Gravicar.Architecture/obj/
+
+Gravicar.Communication/obj/
+
+Gravicar.Communication/bin/
+
+Gravicar.Bebop2/bin/
+
+Gravicar.Bebop2/obj/
+
+flightOperation.Gravicar.Bebop2/bin/
+
+flightOperation.Gravicar.Bebop2/obj/
