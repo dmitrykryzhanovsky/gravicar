@@ -13,11 +13,14 @@ namespace flightOperation.Gravicar.Bebop2
 
             if (drone.StartSession () == true)
             {
+                string responseJson;
+                drone.Discover (out responseJson);
+
                 drone.TakeOff ();
                 Console.WriteLine ("TakeOff command is pushed");
 
                 Console.WriteLine ("Thread is sleeping for 2 sec");
-                Thread.Sleep (2000);
+                Thread.Sleep (500);
 
                 drone.Land ();
                 Console.WriteLine ("Land command is pushed");

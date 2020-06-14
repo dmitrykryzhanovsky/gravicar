@@ -6,8 +6,8 @@ namespace flightOperation.Gravicar.Bebop2
     {
         private static void Main (string [] args)
         {
-            DiscoverTest.Run ();
-
+            TakeOffLandTest.Run ();
+            
             Console.WriteLine ("\nPress any key...");
             Console.ReadKey ();
         }
